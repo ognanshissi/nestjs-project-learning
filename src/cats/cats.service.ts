@@ -1,10 +1,8 @@
 import { Cat } from './interfaces/cats.interface';
-import { Injectable } from "@nestjs/common";
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class CatsService{
-
-    constructor() {}
+export class CatsService {
 
     public cats: Cat[] = [];
 

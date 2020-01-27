@@ -9,6 +9,8 @@ import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggerMiddleware).forRoutes('cats')
+    consumer
+      .apply(LoggerMiddleware)
+      .forRoutes('cats');
   }
 }
